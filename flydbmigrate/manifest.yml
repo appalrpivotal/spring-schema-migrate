@@ -1,0 +1,13 @@
+---
+applications:
+- name: flydbmigrate
+  memory: 1G
+  instances: 1
+  host: flydbmigrate-${random-word}
+  path: target/flydb-0.0.1-SNAPSHOT.jar
+  env:
+     JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
+  services:
+     - mysql
+
+
