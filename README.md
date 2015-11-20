@@ -15,6 +15,10 @@ The shell script will perform end to end blue green deployment and perform blue 
 - Run ./script.sh 
 
 
+Scenario 2:
+
+Pushing the first version of the Application (corp-store-blue) and then have the second version (corp-store-green) perform the schema changes and add a column to Mysql instance.
+
 Steps:
 
 cd corp-store-blue
@@ -24,21 +28,6 @@ cf push
 cd corp-store-green
 
 cf push
-
-Scenario 2:
-
-Pushing the first version of the Application (corp-store-blue) and then have the second version (corp-store-green) perform the schema changes and add a column to Mysql instance.
-
-Steps:
-1) 
-
-cd corp-store-blue
-
-cf push
-
-3) cd corp-store-green
-
-4) cf push
 
 You will notice that the green version of the application is backed with the new changes to the database.
 
