@@ -1,6 +1,6 @@
 # spring-schema-migrate
 
-This is a demo to perform a schema migration or changes before we swtich versions of our Application. Below are the two scenarios in which we can demo this:
+This is a demo to perform a schema migration or changes before we swtich versions of our Application. Below are the two scenarios in which we can demo this. The Project uses Spring Boot integration with FlywayDB tool to do this. 
 
 Scenario 1:
 
